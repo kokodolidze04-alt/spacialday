@@ -756,25 +756,280 @@ body {
 ========================================================= */
 
 footer {
+
   width: 100%;
-  background: var(--brown-dark);
-  color: rgba(255,255,255,.5);
-  padding: 22px 6vw;
+
+  background:
+    var(--brown-dark);
+
+  color:
+    rgba(255,255,255,.55);
+
+  padding:
+    55px 6vw;
+
+  font-family:
+    var(--serif);
+
+}
+
+
+.footer-content {
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
   display: flex;
+
+  align-items: center;
+
   justify-content: space-between;
-  font-family: var(--serif);
+
+  gap: 45px;
+
 }
 
-footer p {
+
+.footer-brand {
+
+  max-width: 330px;
+
+}
+
+
+.footer-label {
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  color:
+    rgba(255,255,255,.85);
+
+  font-size: 14px;
+
+  letter-spacing: 4px;
+
+}
+
+
+.footer-brand p {
+
   margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
 }
 
-footer a {
-  color: white;
+
+.footer-brand strong {
+
+  color:
+    rgba(255,255,255,.9);
+
+  font-weight: 500;
+
+}
+
+
+.footer-divider {
+
+  width: 1px;
+
+  height: 55px;
+
+  background:
+    rgba(255,255,255,.12);
+
+}
+
+
+.footer-credit {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  flex: 1;
+
+}
+
+
+.footer-credit span {
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  color:
+    rgba(255,255,255,.45);
+
+}
+
+
+.footer-credit a {
+
+  width: fit-content;
+
+  color:
+    #f28c28;
+
   text-decoration: none;
-  font-size: 22px;
+
+  font-family:
+    var(--serif);
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  transition:
+    color .3s ease,
+    opacity .3s ease,
+    transform .3s ease;
+
 }
 
+
+.footer-credit a:hover {
+
+  color:
+    #ffad52;
+
+  opacity: .9;
+
+  transform:
+    translateX(3px);
+
+}
+
+
+.footer-credit small {
+
+  font-size: 11px;
+
+  color:
+    rgba(255,255,255,.3);
+
+  letter-spacing: .5px;
+
+}
+
+
+.footer-top {
+
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(255,255,255,.18);
+
+  border-radius: 50%;
+
+  color:
+    rgba(255,255,255,.8);
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  transition:
+    background .3s ease,
+    transform .3s ease;
+
+}
+
+
+.footer-top:hover {
+
+  background:
+    rgba(255,255,255,.08);
+
+  transform:
+    translateY(-3px);
+
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 700px) {
+
+  footer {
+
+    padding:
+      45px 20px;
+
+  }
+
+
+  .footer-content {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+  }
+
+
+  .footer-brand {
+
+    max-width: 100%;
+
+  }
+
+
+  .footer-divider {
+
+    width: 55px;
+
+    height: 1px;
+
+  }
+
+
+  .footer-credit {
+
+    width: 100%;
+
+  }
+
+
+  .footer-credit a {
+
+    font-size: 23px;
+
+  }
+
+
+  .footer-top {
+
+    align-self: flex-end;
+
+    margin-top: -55px;
+
+  }
+
+}
 
 /* =========================================================
    REVEAL
